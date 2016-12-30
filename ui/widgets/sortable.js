@@ -225,7 +225,7 @@ return $.widget( "ui.sortable", $.ui.mouse, {
 		this.helper.css( "position", "absolute" );
 		
 		//both _getRelativeOffset() and _getParentOffset() depend on cssPosition, so it should be set
-		//before calling these functions to void strange positioning on the first sorting action
+		//before calling these functions to avoid strange positioning on the first sorting action
 		this.cssPosition = this.helper.css( "position" );
 
 		$.extend( this.offset, {
